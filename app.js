@@ -1,4 +1,4 @@
-
+//instantiate data from html    
 const  github = new Github()
 const profilel_show = document.querySelector("#profilel_show")
 const search = document.querySelector('#search');
