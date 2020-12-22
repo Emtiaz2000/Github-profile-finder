@@ -1,4 +1,4 @@
-
+//work with localstorage
 class Store{
     static  getlocalStroge(githubId){
           let gitId;
@@ -12,6 +12,7 @@ class Store{
           localStorage.setItem('githubId',JSON.stringify(gitId));
            
       }
+    //return data from localStorage
      static getDatafromLoaclStorage(){
           let gitId;
           if(localStorage.getItem('githubId')===null){
@@ -21,7 +22,7 @@ class Store{
           }
           return gitId
       } 
-  
+  //geting data from localStorage and display it in web page 
      static useDataFromLoaclStorage(){
           const gitId = Store.getDatafromLoaclStorage();
           gitId.forEach(element => {
@@ -30,4 +31,5 @@ class Store{
           });
       }
   }
+//show data after load the pahe
   window.addEventListener('DOMContentLoaded',Store.useDataFromLoaclStorage)
