@@ -1,3 +1,4 @@
+//fetch data from github api
 class Github{
     constructor(){
         this.clintId = '6699096cce1c84badb93';
