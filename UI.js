@@ -1,3 +1,4 @@
+//display data inside the html
 class UI{
     display({avatar_url, login,public_repos,id,html_url,latest_repo, result1_html_url}){
         profilel_show.innerHTML = `<div class="card" style="width: 30rem;margin:20px auto">
