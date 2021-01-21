@@ -6,7 +6,7 @@ const submit = document.querySelector('#button')
 //working after click the button 
 submit.addEventListener('click',(e)=>{
 e.preventDefault();
-if(search === null){
+if(search.value === null){
     //if input is null
     alert('please fill the input')
 }else{
